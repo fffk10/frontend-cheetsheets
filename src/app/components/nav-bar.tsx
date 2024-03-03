@@ -38,7 +38,9 @@ export default function NavBar() {
         borderBottom='1px solid'
         borderColor='gray.200'
       >
-        <Logo />
+        <Link href='/'>
+          <Logo />
+        </Link>
         <Button ref={btnRef} variant='unstyled' onClick={onOpen}>
           <HamburgerIcon />
         </Button>
@@ -52,7 +54,9 @@ export default function NavBar() {
         <Drawer isOpen={isOpen} placement='left' onClose={onClose} size='xs'>
           <DrawerContent>
             <DrawerHeader>
-              <Logo />
+              <Link href='/'>
+                <Logo />
+              </Link>
               <DrawerCloseButton />
             </DrawerHeader>
 
